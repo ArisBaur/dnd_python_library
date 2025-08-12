@@ -1,21 +1,18 @@
-from enum import Enum
+from enum import Enum, auto
 
 class Condition(Enum):
-    BLINDED = ("blinded", False)
-    CHARMED = ("charmed", False)
-    DEAFENED = ("deafened", False)
-    FRIGHTENED = ("frightened", False)
-    GRAPPLED = ("grappled", False)
-    INCAPACITATED = ("incapacitated", False)
-    INVISIBLE = ("invisible", False)
-    PARALYZED = ("paralyzed", False)
-    PETRIFIED = ("petrified", False)
-    POISONED = ("poisoned", False)
-    PRONE = ("prone", False)
-    RESTRAINED = ("restrained", False)
-    STUNNED = ("stunned", False)
-    UNCONSCIOUS = ("unconscious", False)
+    BLINDED = auto()
+    CHARMED = auto()
+    DEAFENED = auto()
+    FRIGHTENED = auto()
+    GRAPPLED = auto()
+    INCAPACITATED = auto()
+    INVISIBLE = auto()
+    PARALYZED = auto()
+    PETRIFIED = auto()
+    POISONED = auto()
+    PRONE = auto()
+    RESTRAINED = auto()
+    STUNNED = auto()
+    UNCONSCIOUS = auto()
 
-    def __init__(self, label, isActive):
-        self.label = label
-        self.isActive = isActive

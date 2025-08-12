@@ -94,4 +94,4 @@ class player:
     
 
     def __str__(self):
-        return f"Lvl:{self.level} {self.dnd_class} {self.name}({self.hit_points}/{self.max_hit_points})"
+        return f"Lvl:{self.level} {self.race} {self.dnd_class} {self.name}({self.hit_points}/{self.max_hit_points})"
