@@ -1,0 +1,1 @@
+#cantrips are also spells, just level 0
