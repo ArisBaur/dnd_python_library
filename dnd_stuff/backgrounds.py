@@ -17,5 +17,5 @@ class Background(Enum):
         self.skill_proficiencies = skill_proficiencies
         self.languages = languages
         self.starting_equipment = starting_equipment
-        self.currency = Wallet(starting_currency)
+        self.starting_currency = Wallet(starting_currency)
         self.feats = feats

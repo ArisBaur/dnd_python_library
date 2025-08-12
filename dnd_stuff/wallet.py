@@ -10,6 +10,20 @@ class Wallet():
         self.platinum = platinum
         Wallet.all_wallets.add(self)
 
+    def add_wallet(self, other):
+        self.copper += other.copper
+        self.silver += other.silver
+        self.gold += other.gold
+        self.platinum += other.platinum
+        self.normalize()
+
+    def add_currency(self, copper=0, silver=0, gold=0, platinum=0):
+        self.copper += copper
+        self.silver += silver
+        self.gold += gold
+        self.platinum += platinum
+        self.normalize()
+
     def normalize(self):
         if self.copper < 0:
             self.silver += self.copper // 10

@@ -1,15 +1,15 @@
-from enum import Enum, auto
+from enum import Enum
 
 class Alignment(Enum):
-    LAWFUL_GOOD = auto()
-    NEUTRAL_GOOD = auto()
-    CHAOTIC_GOOD = auto()
-    LAWFUL_NEUTRAL = auto()
-    TRUE_NEUTRAL = auto()
-    CHAOTIC_NEUTRAL = auto()
-    LAWFUL_EVIL = auto()
-    NEUTRAL_EVIL = auto()
-    CHAOTIC_EVIL = auto()
+    LAWFUL_GOOD = "LG"
+    NEUTRAL_GOOD = "NG"
+    CHAOTIC_GOOD = "CG"
+    LAWFUL_NEUTRAL = "LN"
+    TRUE_NEUTRAL = "TN"
+    CHAOTIC_NEUTRAL = "CN"
+    LAWFUL_EVIL = "LE"
+    NEUTRAL_EVIL = "NE"
+    CHAOTIC_EVIL = "CE"
 
     def __init__(self, label):
         self.label = label

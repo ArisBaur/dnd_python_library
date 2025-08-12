@@ -2,13 +2,17 @@ from enum import Enum
 import random   
 
 class Dice(Enum):
-    d4 = 4
-    d6 = 6
-    d8 = 8
-    d10 = 10
-    d12 = 12
-    d20 = 20
-    d100 = 100
+    d4 = (4, 2.5, 3)
+    d6 = (6, 3.5, 4)
+    d8 = (8, 4.5, 5)
+    d10 = (10, 5.5, 6)
+    d12 = (12, 6.5, 7)
+    d20 = (20, 10.5, 11)
+    d100 = (100, 50.5, 51)
+
+    def __init__(self, faces, average, rounded_average):
+        self.faces = faces
+        self.average = average
 
 def roll(faces):
     return random.randint(1, faces)
